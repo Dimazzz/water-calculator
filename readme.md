@@ -16,4 +16,4 @@ window.calculateWaterAmount = (landscape: number[]) => number
 ```
 
 #### • validate correctness of landscape
-#### • cover this application with tests (TDD)
+#### • jest test

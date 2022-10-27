@@ -1,8 +1,9 @@
 export const maxHeight = 32000;
+export const maxLandscapeLength = 32000;
 
 const validate = (landscape: number[]) => {
-    if (landscape.length > maxHeight) {
-        throw new Error(`Landscape should not contain more than ${maxHeight} elements!`);
+    if (landscape.length > maxLandscapeLength) {
+        throw new Error(`Landscape should not contain more than ${maxLandscapeLength} elements!`);
     }
 
     for (const height of landscape) {

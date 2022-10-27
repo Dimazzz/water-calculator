@@ -1,4 +1,4 @@
-import {calcWater, maxHeight} from "./calc-water";
+import {calcWater, maxHeight, maxLandscapeLength} from "./calc-water";
 
 describe('calc water', () => {
     test('success test', () => {
@@ -25,6 +25,6 @@ describe('calc water', () => {
     });
 
     test('check array size', () => {
-        expect(() => calcWater(new Array(maxHeight + 1))).toThrow(Error);
+        expect(() => calcWater(new Array(maxLandscapeLength + 1))).toThrow(Error);
     });
 });
