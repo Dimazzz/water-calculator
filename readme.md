@@ -7,6 +7,8 @@ The landscape can be presented as a collection of heights. [5,2,3,4,5,4,0,3,1]
 When rain happens, landscape is filled with water. Water is collected inside pits only
 between hills. For example: collected 9 squares of water.
 
+![img.png](forReadMe.png)
+
 ### You need to:
 #### • implement an application which calculates amount of collected water for any landscapes. Water calculator should implement method 
 ```typescript
