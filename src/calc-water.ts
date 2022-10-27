@@ -15,7 +15,9 @@ const validate = (landscape: number[]) => {
         }
     }
 }
-const getPitsLeft = (landscape: number[], maxIndex: number, pits: number[][] = []): number[][] => {
+
+type Pit = [number, number];
+const getPitsLeft = (landscape: number[], maxIndex: number, pits: Pit[] = []): Pit[] => {
     if (maxIndex === 0) {
         return pits;
     }
@@ -28,7 +30,7 @@ const getPitsLeft = (landscape: number[], maxIndex: number, pits: number[][] = [
     return getPitsLeft(landscape, maxIndex2, pits);
 }
 
-const getPitsRight = (landscape: number[], maxIndex: number, pits: number[][] = []): number[][] => {
+const getPitsRight = (landscape: number[], maxIndex: number, pits: Pit[] = []): Pit[] => {
     if (maxIndex === landscape.length - 1) {
         return pits;
     }
